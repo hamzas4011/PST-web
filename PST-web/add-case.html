@@ -1,0 +1,93 @@
+<html>
+
+<head>
+    <title>
+        Admin  </title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="js/jquery-3.4.1.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="header-grid-container">
+            <div class="grid-item  text-left" >
+                <a href="index.html">
+                    <img src="imgs/logo.jpg" class="logo">
+                </a>
+            </div>
+
+            <div class="grid-item" style="text-align: center;">
+                <div class="display-inline menu-item">
+                    <button>
+                        <a href="index.html" class="menu-item-a">Forside</a>
+                    </button>
+                </div>
+            </div>
+
+            <div class="grid-item" style="text-align: right;" >
+                <div class="display-inline menu-item">
+                    <button>
+                        <a href="admin.html" class="menu-item-a">Admin</a>
+                    </button>
+                </div>
+
+            </div>
+        </nav>
+    </header><main>
+    <form onsubmit="event.preventDefault();addCase2(this)">
+        <table class="table">
+            <tr>
+                <td>Tittel</td>
+                <td>
+                    <input type="text" name="title" required />
+                </td>
+            </tr>
+            <tr>
+                <td>Beskrivelse</td>
+                <td>
+                    <textarea name="description" rows=10 required></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>Dato</td>
+                <td>
+                    <input type="text" name="date" required />
+                </td>
+            </tr>
+            <tr>
+                <td>Bilde</td>
+                <td>
+                    <input type="text" name="image" required />
+                </td>
+            </tr>
+            <tr>
+                <td>Kategori</td>
+                <td>
+                    <input type="text" name="category" required />
+                </td>
+            </tr>
+            
+            <tr>
+                <td></td>
+                <td>
+                    <input type="submit" value="Legg til sak" required />
+                </td>
+            </tr>
+        </table>
+    </form>
+</main>
+<script src="js/add-case.js"></script><footer class="text-center" style="padding: 10px;">
+    <div>
+         For mer informasjon kontakt PST på telefon: 23 22 11 99
+    </div>
+    <br />
+    <div>
+         eller PST på mail: PST@hotmail.com
+    </div>
+</footer>
+</body>
+
+</html>
+
+
+<script src="js/Case.js"></script>

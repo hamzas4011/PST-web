@@ -1,0 +1,163 @@
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.case-container {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+}
+
+.case-container .case-item {
+  text-align: center;
+  padding:10px;
+  border-bottom: 1px solid grey;
+}
+
+.case-container .case-item img {
+  width:80%;
+}
+
+.case-container .case-title {
+  font-size: 25px;
+  font-weight: bold;
+  width:80%;
+  margin:auto;
+  min-height: 60px;
+}
+.case-container .case-link {
+  background-color:black;
+  color: white;
+  padding:5px;
+  display:inline-block;
+  font-size: 25px;
+}
+
+.header-grid-container {
+  display: grid;
+  grid-template-columns: auto 10% 10%;
+  background: black;
+  border: 2px solid darkgrey;
+  /* padding: 10px; */
+}
+.header-grid-container button {
+  font-size:25px;
+}
+
+.logo {
+  width: 75px;
+  height: 75px;
+}
+.banner {
+  overflow: hidden;
+}
+main{
+  min-height:100%;
+}
+
+/*
+     Footer
+*/
+footer {
+  background: black;
+  border: 2px solid darkgrey;
+  position: static;
+  bottom: 0px;
+  color: white;
+}
+
+ /*
+     Header
+*/
+header{
+  margin-bottom: 10px;
+}
+
+.case-grid{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  height: 100%;
+}
+.case-left{
+  height: 100%;
+  text-align: center;
+}
+.case-left img{
+  height: 50%;
+  width:50%;
+  margin-top:10%;
+}
+
+
+.case-right{
+  height: 100%;
+  text-align: left;
+}
+
+.case-list{
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+}
+.case-list .case-item{
+  text-align: center;
+  margin-bottom: 10px;
+}
+#caption{
+  position: relative;
+    color: white;
+    top: 200px;
+    z-index: 20;
+    font-size: 3em;
+    text-align: center;
+}
+
+.menu-item{
+  margin:5px;
+  margin-top:20px;
+}
+
+.table {
+  width: 500px;
+  margin: auto;
+  align-items: center;
+}
+
+.table td{
+  padding:5px;
+}
+.table input,textarea{
+  font-size:20px;
+  width:100%;
+}
+
+
+@media screen and (max-width: 768px) {
+  .case-list{
+    grid-template-columns: auto auto;
+  }  
+  .case-container {
+    grid-template-columns: auto auto;
+  }
+  .case-grid{
+    grid-template-columns: 100%;
+    
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .case-list{
+    grid-template-columns: 100%;
+  }  
+  .case-container {
+    grid-template-columns: 100%;
+  }
+  .case-grid{
+    grid-template-columns: 100%;
+    
+  }
+  #caption{
+    font-size: 1.5em;
+  }
+}
+
+
